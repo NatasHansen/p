@@ -1,0 +1,64 @@
+
+.carousel {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 80px 40px 30px 40px;;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+
+.carousel-control.left {
+    margin: 230 0 0 0px;
+}
+
+
+.carousel-control.right {
+    right: -12px;
+    margin: 230 0 0 0px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+    background-color: rgba(0, 90, 94, 0.55);
+}
+
+.carousel-indicators .active {
+background: #005a5e;
+}
+
+@media (min-width: 992px)
+.mb-lg-0, .my-lg-0 {
+    /* margin-bottom: 0!important; */
+}
+
+@media (min-width: 992px)
+.mt-lg-0, .my-lg-0 {
+    /* margin-top: 0!important; */
+}
+.mb-2, .my-2 {
+    /* margin-bottom: .5rem!important; */
+}
+.mt-2, .my-2 {
+    margin-top: .5rem!important;
+}
+
+.navbar-collapse.collapse {
+    display: flex !important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+}

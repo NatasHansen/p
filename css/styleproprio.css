@@ -1,0 +1,370 @@
+z.border-success{
+    border-color: lightgray !important;
+}
+.text-success{
+    color: black !important;
+}
+
+.meulinkbtn{
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+/*hansen alterações*/
+
+.border-success {
+    border-color: #aaaaaa!important;
+}
+
+
+.card-header {
+    font-family: 'Kaushan Script', cursive;
+    color: #ff7600;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-image: linear-gradient(141deg, #141313 -9%, #505050 72%, #b4b4b4 310%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.carousel-indicators .active {
+    background-color: #005a5e;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0, 90, 94, 0.55);
+}
+
+.w-100 {
+    width: 100%!important;
+    padding-top: 71px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 200px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.logo{
+    margin: 0px 15px 0px 0px;
+    height: 50px; 
+    width: 75px;
+
+}
+
+.navproprio {
+    background-image: linear-gradient(141deg, #141313 -9%, #505050 72%, #b4b4b4 310%) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #ff7600;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive ;
+    margin: 0px 10px 0px 0px;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: rgba(242, 112, 0, 0.79);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ff7600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #ff7600;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: #ff7600;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(255, 118, 0, 0.9);
+  border-color: rgba(255, 118, 0, 0.9);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-outline-success {
+    color: #fff;
+    background-color: #01939a;
+    background-image: none;
+    border-color: #47afb4;
+    box-shadow: none !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #017277;
+    border-color: #005a5e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+/*  flex-flow: row-reverse;*/
+}
+
+@media (max-width: 992px){
+    .navbar-expand-lg {
+        flex-flow: row;
+    }
+
+}
+@media (min-width: 992px){
+    #btn-login{
+        position: absolute;
+        right: 20px;
+    }
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #017277;
+    border-color: #005a5e;
+}
+
+.btn-outline-success.focus, .btn-outline-success:focus{
+    box-shadow: 0 0 0 0.2rem rgba(27, 80, 65, 0.5);
+}
+
+.d-block w-100{
+/*    z-index: 0;*/
+    background: rgb(0, 0, 0)!important;
+    background: rgba(0, 0, 0, 0.5)!important;
+    color: red;
+/*    width: 100%;*/
+
+}
+
+
+
+.carouselExampleIndicators img {vertical-align: middle;}
+
+.carouselExampleIndicators .d-block w-100 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/*Imagem Card */
+
+.img {
+    margin-top: 5% !important;
+}
+
+.imgcard{
+   width: 65%;
+   height: 65%;
+   display: flex;
+   margin: auto;
+    
+}
+
+.btn-cadastro{
+    margin-top: 1%;
+    margin: 3%;
+}
+
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  z-index: 999;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 500px;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #ff7600;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+}
+.modal__close:focus{
+    background: #FFF;
+}
+
+.modal__header .modal__close:before { content: "\2715"; }
+
+.modal__content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+}
+
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #01939a;
+  color: #fff;
+  border-color: #47afb4;
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.modal__btn:focus, .modal__btn:hover {
+    box-shadow: none !important;
+    color: #fff;
+    background-color: #017277;
+    border-color: #005a5e;
+}
+}
+
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
+legend{
+    text-align: center !important;
+}
+
+.cardp h2 {
+    margin-top: 4%;
+    font-size: 1.8rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Padding inputs*/
+button, input {
+    line-height: normal !important;
+   /* padding: 3px !important;*/
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    font-size: 13px !important;
+    margin-bottom: -14px;
+}
