@@ -40,7 +40,18 @@ require 'server/verifica-sessao.php';
     <body style="background-image:linear-gradient(141deg, #d2d2d294 -9%, #e0e0e054 72%, #f5f5f57d 310%) !important;">
     <!-- Navbar -->
  
-<nav class="navbar navbar-expand-lg navbar-light bg-light navproprio" style=" z-index: 100; width: 100%;">
+<!--Plugin Facebook - Léo-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navproprio" style=" z-index: 100; width: 100%;">
     <img class="logo" src="img/logoofc.png"  width="55px" height="50px" alt="html/css">
       <a class="navbar-brand" href="index.php">VulpiStory</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -270,6 +281,13 @@ require 'server/verifica-sessao.php';
 				</div>
             </div>
         </div>
+                  
+    <!--Plugin Facebook Léo-->
+        <div class="facebook">
+        <div class="fb-page" style="margin: 0px 0px 2rem 6.5rem;" data-href="https://www.facebook.com/vulpistory" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vulpistory" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vulpistory">VulpiStory</a></blockquote></div>
+        </div>
+        
+        
         <!--FOOTER-->
         <div class="card text-center">
             <div class="card-header">VulpiStory</div>

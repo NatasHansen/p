@@ -501,6 +501,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 /*footer*/
 
+.card text-center{
+    float: right;
+    width: 100%;
+}
 element.style {
 }
 
@@ -513,3 +517,4 @@ element.style {
     background-image: linear-gradient(141deg, #141313 -9%, #505050 72%, #b4b4b4 310%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+
