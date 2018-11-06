@@ -26,6 +26,9 @@ require 'server/verifica-sessao.php';
 		<link rel="stylesheet" type="text/css" href="css/visualicao_style.css" />
 		<script src="js/modernizr.custom.js"></script>
     
+    <!--plugin avaliação (leo)-->
+    
+    
     <!--Modal-->
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <!--Fim Modal-->
@@ -122,8 +125,8 @@ require 'server/verifica-sessao.php';
 							<ul class='page'>
 								<li></li>
 								<li>
-                                    <a class="btn_l" href="leitura_livro.php">Ler</a>
-									<a class="btn_l" href="#">Baixar</a>
+                                    <a class="btn_l" href="">Ler</a>
+									<a class="btn_l" href="">Baixar</a>
                                 </li>
                                 <li></li>
                                 <li></li>
@@ -161,11 +164,30 @@ require 'server/verifica-sessao.php';
                         <br><br>
 					</li>
             <div id="estante_geral">
-                                    <div id="div_left">
-        <label class="etiqueta">Sinopse:</label><p class="sinopse" style="color: #63707d;">0A história gira em torno do personagem Eren Yeager em um mundo onde a humanidade vive rodeada por enormes muralhas para se proteger de criaturas gigantescas, os Titãs. A história narra a luta da humanidade para recuperar seu território, e esclarecer os mistérios ligados ao aparecimento dos Titãs.</p><br>
+                <div id="estrelas">
+                    <script src="js/funcoes.js"></script>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(1)">
+                    <img src="img/star.svg" id="s1"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                    <img src="img/star.svg" id="s2"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                    <img src="img/star.svg" id="s3"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                    <img src="img/star.svg" id="s4"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                    <img src="img/star.svg" id="s5"></a>
+                    <p id="rating">0</p>
                 </div>
+        </div>
+        <div id="div_left">
+                <label class="etiqueta">Sinopse:</label><p class="sinopse" style="color: #63707d;">0A história gira em torno do personagem Eren Yeager em um mundo onde a humanidade vive rodeada por enormes muralhas para se proteger de criaturas gigantescas, os Titãs. A história narra a luta da humanidade para recuperar seu território, e esclarecer os mistérios ligados ao aparecimento dos Titãs.</p><br>
             </div>
-        </ul>
+    </ul>
 
         <!--FOOTER-->
         <div class="card text-center" style="width: 100%;">

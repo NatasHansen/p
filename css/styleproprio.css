@@ -45,7 +45,7 @@ z.border-success{
 
 .w-100 {
     width: 100%!important;
-    padding-top: 71px;
+/*    padding-top: 71px;*/
 }
 
 .carousel-caption {
@@ -368,3 +368,284 @@ button, input {
     font-size: 13px !important;
     margin-bottom: -14px;
 }
+
+/*Modal Politicas de uso*/
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section1 {
+  font-size: 62.5%;
+}
+
+section1 {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1;
+}
+
+body.overflow-hidden {
+  /* used when modal is visible */
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+/*Responsividade*/
+@media only screen and (min-width: 480px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+   .modalp-close {
+    top: 70px;
+  }
+    .section1 .titulop, .datap, .textop {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+    .modalp .modalp-content {
+    padding: 4em 10%;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+    .modalp .modalp-content {
+    padding: 6em 20%;
+  }
+    .modalp .titulop, .datap, .textop{
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+/*Fim Responsividade*/
+
+
+/*Modal*/
+
+.modalp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+  -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+  transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+}
+
+.modalp::after {
+  /* gradient overlay at bottom of modal window */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  background: transparent;
+  background: -webkit-linear-gradient( bottom , #34383c, rgba(52, 56, 60, 0));
+  background: linear-gradient(to top, #34383c, rgba(52, 56, 60, 0));
+}
+
+.modalp .modalp-content {
+background-image: linear-gradient(141deg, #141313 -9%, #505050 72%, #b4b4b4 310%) !important;
+  height: 100%;
+  width: 100%;
+  padding: 3em 5%;
+  text-align: left;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modalp .titulop, .datap, .textop {
+  color: orange;
+  line-height: 1.6;
+  margin: 2em 0;
+}
+
+.modalp-is-visible .modalp {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  -moz-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+}
+
+.modalp-is-visible .modalp .modalp-content {
+  -webkit-overflow-scrolling: touch;
+}
+
+.modalp-action {
+  position: relative;
+  background-color: rgba(0,0,0,.03);
+}
+
+.modalp-action .link, .modalp-action .modalp-bg {
+  display: inline-block;
+  height: 4em;
+}
+
+.modalp-action .modalp-bg{
+ background-color: #34383c;   
+}
+
+.modalp-action .link {
+  width: 12.5em;
+  border-radius: 5em;
+  color: #ff7600;
+  line-height: 4em;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+
+a:hover {
+    color: rgba(242, 112, 0, 0.79) !important;
+    text-decoration: none !important;
+}
+
+.modalp-action .link.to-circle {
+  width: 4em;
+  color: transparent;
+  -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
+  transition: color 0.2s 0s, width 0.3s 0.2s;
+}
+
+.modalp-action .modalp-bg {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  width: 4em;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-2em);
+  -moz-transform: translateX(-2em);
+  -ms-transform: translateX(-2em);
+  -o-transform: translateX(-2em);
+  transform: translateX(-2em);
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+
+.modalp-action .modalp-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalp-close {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3) url(../img/cd-icon-close.svg) no-repeat center center;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+}
+.no-touch .modalp-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalp-is-visible .modalp-close {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/*Fim modal*/
+
+
+
+
+/*P Formatação*/
+
+.section1 .titulop, .datap, .textop {
+  margin: 2em 0;
+  line-height: 1.6;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modalp-content .titulop{
+    font-size: 25px; 
+    font-family: verdana; 
+    text-align: center;
+}
+
+.modalp-content .datap{
+    font-size: 20px; 
+    font-family: verdana; 
+    text-align: justify;
+}
+
+.modalp-content .textop{
+    font-size: 15px; 
+    font-family: verdana; 
+    text-align: justify;
+}
+
+/*Fim P Formatação*/
+/*Imagem Direitos*/
+/*Fim Imagem Direitos*/
+/*Fim modal politicas de uso*/

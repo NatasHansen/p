@@ -82,7 +82,7 @@ require 'server/verifica-sessao.php';
                         
                             <a class="dropdown-item" href="#">Perfil</a>
                             <a class="dropdown-item" href="#">Enviar</a>
-                            <a class="dropdown-item" href="#">Leia</a>
+                            <a class="dropdown-item" href="#">Ler</a>
                             <a class="dropdown-item" href="#">Favoritos</a>
                             <a class="dropdown-item" href="server/logout.php">Logout</a>
 
@@ -94,9 +94,10 @@ require 'server/verifica-sessao.php';
         <span style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()"><img src="img/menu.png" width="50px" height="50px"></span>
             
         </nav>
-    <!--fim-->
+        <!--fim-->
+        
         <div style="margin: 3% 0% 3% 24%;">
-            <iframe src="/ViewerJS/indexx.html" width="700" height="550" allowfullscreen="" webkitallowfullscreen=""></iframe>
+            <iframe src="/ViewerJS/Exerc%C3%ADcio%20Dirigido%20Revis%C3%A3o%20La%C3%A7os.pdf" width="700" height="550" allowfullscreen="" webkitallowfullscreen=""></iframe>
         </div>
             
         <!--FOOTER-->
